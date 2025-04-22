@@ -1,0 +1,141 @@
+body {
+    background-color: rgb(15, 15, 15);
+    width: 90%;
+    max-width: 860px;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    padding: 5px;
+
+}
+
+.list-item .list-options {
+    display: flex;
+    list-style-type: none;
+    font-size: 16px;
+    gap: 10px;
+}
+
+
+.list-item a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.list-item a:hover {
+    text-decoration: underline;
+}
+
+.plano {
+    background-color: chartreuse;
+    color: black;
+    pointer-events: none;
+
+}
+
+
+.logo {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-left: 35px;
+}
+
+.main-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 0 50px 0;
+    font-size: 50px;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    color: white;
+    background-color: rgb(52, 52, 52);
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 2px black;
+    padding: 25px;
+}
+
+.list-item__bnf {
+    color: rgb(214, 214, 214);
+    padding-left: 15px;
+    margin: 0 0 35px;
+    flex-grow: 1;
+    line-height: 1.8;
+}
+
+.list-item__bnf li {
+    font-size: 13px;
+}
+
+.list-item__bnf li::marker {
+    color: greenyellow;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.titulo {
+    text-transform: uppercase;
+    border-bottom: 1px solid greenyellow;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 0;
+    padding: 0 0 8px;
+}
+
+.gold {
+    color: rgb(255, 179, 0);
+}
+
+.premium {
+    color: aquamarine;
+}
+
+.cards p {
+    font-size: 12px;
+}
+
+.price {
+    font-size: 33px;
+}
+
+.btsaiba {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: greenyellow;
+    color: black;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.btsaiba:hover {
+    outline: 2px solid greenyellow;
+    color: white;
+    background-color: transparent;
+}
