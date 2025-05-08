@@ -12,18 +12,17 @@ html {
 
 body {
     margin: 0;
-    
 }
 
-.container-fixed{
+.container-fixed {
     position: sticky;
     top: 0;
-    
 }
 
-.container-padd{
-   padding-top: 7rem;
+.container-padd {
+    padding-top: 7rem;
 }
+
 .container {
     max-width: 127.6rem;
     margin: auto;
@@ -50,7 +49,6 @@ body {
     align-items: center;
     display: flex;
     padding: 1rem;
-    
 }
 
 .menu {
@@ -60,7 +58,6 @@ body {
 .menu li {
     display: inline-block;
 }
-
 
 .menu a {
     text-decoration: none;
@@ -80,19 +77,16 @@ body {
     background-color: black;
 }
 
-
 .section-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .section-top h1 {
     font-size: 4.5em;
     letter-spacing: .2rem;
     line-height: 1.1;
-
 }
 
 .section-top span {
@@ -108,7 +102,6 @@ body {
     padding: 1rem 2em;
     border-radius: .2em;
     display: inline-block;
-
 }
 
 .tlt {
@@ -150,18 +143,15 @@ body {
     font-weight: bold;
 }
 
-
 .btn2 {
     display: inline-block;
     margin: 50px 0;
 }
 
-
 .school {
     color: var(--colorp);
     display: flex;
     justify-content: space-around;
-    
 }
 
 .school article {
@@ -198,6 +188,6 @@ footer {
     padding: 2em;
 }
 
-.linkname{
+.linkname {
     color: inherit;
 }
