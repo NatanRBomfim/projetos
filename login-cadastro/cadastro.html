@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="estilo.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="#" method="get" class="formulario">
+      <fieldset class="content">
+        <legend class="tlt">Cadastre-se</legend>
+
+        <label for="user" class="campos">Usuário</label>
+        <input
+          type="text"
+          name="user"
+          id="user"
+          class="dados transition--padding"
+          required
+        />
+
+        <label for="email" class="campos">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="dados transition--padding"
+          required
+        />
+
+        <label for="password" class="campos">Senha</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="dados transition--padding"
+          required
+        />
+
+        <div class="actions">
+          <button type="button" class="btn">Cadastre-se</button>
+          <p>Já possui cadastro? <a href="index.html">Faça login</a></p>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

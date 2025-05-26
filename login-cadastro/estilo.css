@@ -1,0 +1,103 @@
+:root {
+  --colorprimary: #3a68b7;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  background-color: var(--colorprimary);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.formulario {
+  width: 90%;
+  min-width: 37.75em;
+  max-width: 35em;
+  padding: 3em;
+  background-color: white;
+  box-shadow: -0.6em 0 rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tlt {
+  font-size: 3em;
+  font-weight: 300;
+  color: var(--colorprimary);
+  padding: 0.3em 0 0.4em;
+}
+
+.campos {
+  font-size: 1.2em;
+  color: rgb(93, 93, 93);
+  text-transform: uppercase;
+}
+
+.dados {
+  outline: 0;
+  border: none;
+  border-bottom: 0.15rem solid var(--colorprimary);
+  margin: 1em 0 1em;
+  padding: 0.5em 0;
+}
+
+.transition--padding {
+  transition-property: padding-left;
+  transition: ease-in-out;
+  transition-duration: 0.1s;
+}
+
+.btn {
+  border: none;
+  background-color: var(--colorprimary);
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  padding: 0.6em 1em;
+  border-radius: 0.2em;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.cadastro {
+  text-decoration: none;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: var(--colorprimary);
+  font-weight: bold;
+  padding: 0.6em 1em;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.action_link {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.dados:invalid:focus {
+  outline: 0.2rem solid #ff000d;
+}
+
+.dados:focus {
+  outline: 0.2rem solid var(--colorprimary);
+  padding-left: 0.2em;
+}
