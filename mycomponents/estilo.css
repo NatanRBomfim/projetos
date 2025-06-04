@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --default-color-menu: rgba(49, 51, 59, 0.9);
+  --default-color: rgba(68, 72, 86, 0.6);
+  --default-color-prs: #ff703c;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.7;
+  display: flex;
+  margin: 0;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-image: url(imagens/bg-unsplash.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right bottom;
+}
+
+.header-left {
+  flex: 0 0 26rem;
+  min-height: 100vh;
+  background-color: var(--default-color-menu);
+  padding: 1.5em;
+  text-align: right;
+  font-size: 1.5em;
+
+}
+
+.list li {
+  display: block;
+  border-bottom: 2px solid var(--default-color);
+  padding: .5rem 0;
+}
+
+.link-list {
+  color: #e7e7e7;
+  text-decoration: none;
+  padding: 1rem 0;
+  display: block;
+  background-color: transparent;
+  transition-property: padding-right, background-color;
+  transition-duration: .5s;
+}
+
+.link-list:hover {
+  background-color: var(--default-color);
+  padding-right: 1em;
+}
+
+.profile {
+  max-width: 10rem;
+  padding: 1.5em 0;
+}
+
+.content {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.title-pg {
+  font-size: 4rem;
+  padding-bottom: 3.5rem;
+}
+
+.strong {
+  text-transform: uppercase;
+}
+
+.h2-content {
+  color: var(--default-color-prs);
+  font-size: 2em;
+  margin-top: 1rem;
+}
+
+.prs-content {
+  color: var(--default-color-prs);
+  font-size: 1.5em;
+  padding-bottom: 1.5rem;
+}
+
+.pr-default {
+  padding-bottom: 3em;
+  font-size: 1.3em;
+}
+
+.link-icon {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.main-content {
+  flex-grow: 1;
+  flex-shrink: 0;
+  color: rgb(201, 201, 201);
+  padding: 7em 5em;
+  background-color: var(--default-color);
+
+}
