@@ -43,10 +43,11 @@ body {
   display: block;
   background-color: transparent;
   transition-property: padding-right, background-color;
-  transition-duration: .5s;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
 }
 
-.link-list:hover {
+.link-list:hover, .link-list:focus {
   background-color: var(--default-color);
   padding-right: 1em;
 }
