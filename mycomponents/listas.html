@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Projeto My Components</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <header class="header-left">
+        <nav class="list">
+            <a href="#">
+                <img src="imagens/perfil.png" alt="rapaz sorridente" class="profile">
+            </a>
+
+            <ul>
+                <li><a href="index.html" class="link-list">Home</a></li>
+                <li><a href="tipografia.html" class="link-list">Tipografia</a></li>
+                <li><a href="cards.html" class="link-list">Cards</a></li>
+                <li><a href="listas.html" class="link-list">Listas</a></li>
+                <li><a href="formulario.html" class="link-list">Formulário</a></li>
+                <li><a href="botoes.html" class="link-list">Botões</a></li>
+                <li><a href="tabelas.html" class="link-list">Tabelas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1>My Components</h1>
+
+        <article class="hightlight">
+            <h2>Listas</h2>
+            <p>Listas podem ser ordenadas, não ordenadas e aninhadas.</p>
+        </article>
+        <section>
+            <div class="row">
+                <article class="list-content">
+                    <h3>Não ordenada</h3>
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                </article>
+                <article class="list-content">
+                    <h3>Ordenadas</h3>
+                    <ol>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ol>
+                </article>
+                <article class="list-content">
+                    <h3>Alternates</h3>
+                    <ul class="alternate">
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <article class="list-content">
+                    <h3>Não ordenada</h3>
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 2
+                            <ul class="cube-marked">
+                                <li>item 2.1</li>
+                                <li>item 2.2
+                                    <ul>
+                                        <li>item 2.2.1</li>
+                                        <li>item 2.2.2</li>
+                                        <li>item 2.2.3</li>
+                                    </ul>
+                                </li>
+                                <li>item 2.3</li>
+                            </ul>
+                        </li>
+                        <li>item 3</li>
+                    </ul>
+                </article>
+                <article class="list-content">
+                    <h3>Ordenadas</h3>
+                    <ol>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ol>
+                </article>
+                <article class="list-content">
+                    <h3>Ambas</h3>
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

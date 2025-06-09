@@ -161,14 +161,24 @@ address {
 }
 
 .row{
-  
   display: flex;
   gap: 1.5em;
   padding-top: 1.5rem;
-
+  justify-content: space-between;
 }
 
 .card img{
   max-width: 100%;
-  
+}
+
+.list-content{
+  flex-basis: 20em;  
+}
+
+.cube-marked {
+  list-style-type: square;
+}
+
+.cube-marked ul{
+  list-style-type: circle;
 }
