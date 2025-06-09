@@ -12,8 +12,9 @@ body {
   line-height: 1.7;
   display: flex;
   margin: 0;
-  min-height: 100vh;
+  min-height: 150vh;
   font-family: sans-serif;
+  font-size: 1.5rem;
   background-image: url(imagens/bg-unsplash.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,27 +28,29 @@ body {
   background-color: var(--default-color-menu);
   padding: 1.5em;
   text-align: right;
-  font-size: 1.5em;
+}
+
+.list ul {
+  list-style-type: none;
 }
 
 .list li {
-  display: block;
-  border-bottom: 2px solid var(--default-color);
-  padding: .5rem 0;
+  border-bottom: 2px solid var(--default-color)
 }
 
 .link-list {
   color: #e7e7e7;
+  display: block;
   text-decoration: none;
   padding: 1rem 0;
-  display: block;
-  background-color: transparent;
+  margin: .5rem 0;
   transition-property: padding-right, background-color;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
 }
 
-.link-list:hover, .link-list:focus {
+.link-list:hover,
+.link-list:focus {
   background-color: var(--default-color);
   padding-right: 1em;
 }
@@ -58,9 +61,7 @@ body {
 }
 
 .content {
-  font-size: 1.3rem;
   padding: 1em 0;
-
 }
 
 .span {
@@ -85,22 +86,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-
-}
-
-h5 {
-  font-size: 1em;
+  font-size: 2rem;
 }
 
 .link {
   text-decoration: none;
   color: rgb(201, 201, 201);
- 
+
 }
 
 address {
@@ -117,16 +109,35 @@ address {
   color: rgb(201, 201, 201);
   padding: 6em 5em;
   background-color: var(--default-color);
-
 }
 
 .border-left {
   border-left: 1px solid #ff703c;
   padding-left: 2.5rem;
   margin-bottom: 3rem;
-
 }
 
 .underline {
   text-decoration: underline wavy red;
+}
+
+.card {
+  max-width: 74rem;
+  background-color: var(--default-color-menu);
+  padding: 0;
+ 
+}
+
+.card-content {
+  padding: 0 1rem 1rem;
+ 
+}
+
+.card-content p,
+.card-title {
+  margin: 0;
+}
+
+.card-title{
+  font-size: 2.55rem;
 }
