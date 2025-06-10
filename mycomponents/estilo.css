@@ -2,6 +2,8 @@
   --default-color-menu: rgba(49, 51, 59, 0.9);
   --default-color: rgba(68, 72, 86, 0.6);
   --default-color-prs: #ff703c;
+
+  --color-form: #ccc;
 }
 
 html {
@@ -26,7 +28,6 @@ body {
   flex-grow: 0;
   flex-shrink: 0;
   background-color: var(--default-color-menu);
-  
 }
 
 .hightlight {
@@ -36,7 +37,7 @@ body {
   font-size: 1.1em;
 }
 
-article{
+article {
   padding: 1em 0;
 }
 
@@ -44,13 +45,12 @@ section {
   margin-bottom: 3rem
 }
 
-.list{
-    text-align: right;
-    padding: 6.5rem 2.4rem 2.4rem;
-    position: sticky;
-    top: 0;
-    left: 0;
-
+.list {
+  text-align: right;
+  padding: 6.5rem 2.4rem 2.4rem;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .list ul {
@@ -112,16 +112,7 @@ h3 {
 .link {
   text-decoration: none;
   color: rgb(201, 201, 201);
-
 }
-
-address {
-  display: flex;
-  justify-content: space-between;
-  width: 12rem;
-  font-size: 1.3rem;
-}
-
 
 .main-content {
   flex: 1 0;
@@ -130,7 +121,8 @@ address {
   background-color: var(--default-color);
 }
 
-.main-content, .header-left{
+.main-content,
+.header-left {
   font-size: 1.6rem;
 }
 
@@ -142,12 +134,10 @@ address {
   max-width: 740px;
   background-color: var(--default-color-menu);
   padding: 0;
- 
 }
 
 .card-content {
   padding: 0 1rem 1rem;
- 
 }
 
 .card-content p,
@@ -155,45 +145,123 @@ address {
   margin: 0;
 }
 
-.card-title{
+.card-title {
   font-size: 2.55rem;
   margin-bottom: .5rem;
 }
 
-.row{
+.row {
   display: flex;
   gap: 1.5em;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   justify-content: space-between;
 }
 
-.card img{
-  max-width: 100%;
+.row .row {
+  padding-top: 0;
 }
 
-.row > *{
-  flex: 1 0 0%;  
-  
+.row>* {
+  flex: 1 0 0%;
+}
+
+.card img {
+  max-width: 100%;
 }
 
 .cube-marked {
   list-style-type: square;
 }
 
-.cube-marked ul{
+.cube-marked ul {
   list-style-type: circle;
 }
 
-.alternate{
+.alternate {
   list-style-type: none;
   padding: 0;
 }
 
-.alternate li:not(:last-child){
+.alternate li:not(:last-child) {
   border-bottom: 2px solid white;
 }
 
-.list-emoji{
+.list-emoji {
   list-style-type: "\1F642";
 }
 
+input,
+label,
+textarea,
+select,
+.btncontato {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+input,
+textarea,
+select,
+.btnclear {
+  border: none;
+  background-color: var(--color-form);
+  border-radius: .45rem;
+}
+
+input,
+select,
+textarea {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(190, 190, 190);
+}
+
+.txtarea {
+  resize: none;
+}
+
+.btn {
+  border: 1px solid black;
+  padding: .55em 0;
+  cursor: pointer;
+  color: inherit;
+  border-radius: .45rem;
+  transition: background-color .3s ease-in-out;
+}
+
+.btncontato {
+  background-color: var(--default-color-menu);
+}
+
+.btnclear {
+  color: black;
+}
+
+.btnsub {
+  background-color: var(--default-color);
+}
+
+.btncontato:hover,
+.btncontato:focus,
+.btnsub:hover,
+.btnsub:focus {
+  background-color: rgb(41, 42, 48);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+.form-quiz div>label {
+  display: inline;
+}
+
+.form-quiz {
+  width: 35em;
+}
