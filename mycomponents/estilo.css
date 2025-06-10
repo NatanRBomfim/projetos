@@ -171,8 +171,9 @@ address {
   max-width: 100%;
 }
 
-.list-content{
-  flex-basis: 20em;  
+.row > *{
+  flex: 1 0 0%;  
+  
 }
 
 .cube-marked {
@@ -182,3 +183,17 @@ address {
 .cube-marked ul{
   list-style-type: circle;
 }
+
+.alternate{
+  list-style-type: none;
+  padding: 0;
+}
+
+.alternate li:not(:last-child){
+  border-bottom: 2px solid white;
+}
+
+.list-emoji{
+  list-style-type: "\1F642";
+}
+

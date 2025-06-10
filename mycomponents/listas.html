@@ -39,7 +39,7 @@
         </article>
         <section>
             <div class="row">
-                <article class="list-content">
+                <article>
                     <h3>Não ordenada</h3>
                     <ul>
                         <li>item 1</li>
@@ -47,15 +47,15 @@
                         <li>item 3</li>
                     </ul>
                 </article>
-                <article class="list-content">
+                <article>
                     <h3>Ordenadas</h3>
-                    <ol>
+                    <ol start="3">
                         <li>item 1</li>
                         <li>item 2</li>
                         <li>item 3</li>
                     </ol>
                 </article>
-                <article class="list-content">
+                <article>
                     <h3>Alternates</h3>
                     <ul class="alternate">
                         <li>item 1</li>
@@ -67,7 +67,7 @@
         </section>
         <section>
             <div class="row">
-                <article class="list-content">
+                <article>
                     <h3>Não ordenada</h3>
                     <ul>
                         <li>item 1</li>
@@ -87,21 +87,39 @@
                         <li>item 3</li>
                     </ul>
                 </article>
-                <article class="list-content">
+                <article>
                     <h3>Ordenadas</h3>
-                    <ol>
+                     <ol start="6" type="A">
                         <li>item 1</li>
-                        <li>item 2</li>
-                        <li>item 3</li>
-                    </ol>
-                </article>
-                <article class="list-content">
-                    <h3>Ambas</h3>
-                    <ul>
-                        <li>item 1</li>
-                        <li>item 2</li>
+                        <li>item 2
+                            <ol type="I" reversed="3">
+                                <li>item 2.1</li>
+                                <li>item 2.2
+                                    <ol type="a" start="10">
+                                        <li>item 2.2.1</li>
+                                        <li>item 2.2.2</li>
+                                        <li>item 2.2.3</li>
+                                    </ol>
+                                </li>
+                                <li>item 2.3</li>
+                            </ol>
+                        </li>
                         <li>item 3</li>
                     </ul>
+                </article>
+                <article>
+                    <h3>Ambas</h3>
+                    <ol type="I">
+                        <li>item 1</li>
+                        <li>item 2
+                            <ul class="list-emoji">
+                                <li>item 2.2.1</li>
+                                <li>item 2.2.2</li>
+                                <li>item 2.2.3</li>
+                            </ul>
+                        </li>
+                        <li>item 3</li>
+                    </ol>
                 </article>
             </div>
         </section>
