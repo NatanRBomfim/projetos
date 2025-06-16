@@ -5,6 +5,7 @@
   --color-form: #ccc;
 
   --default-gap: 3rem;
+  --padding-btn: .55em 0;
 }
 
 html {
@@ -206,21 +207,14 @@ input[type="checkbox"] {
   width: auto;
 }
 
-
-input,
-textarea,
-select,
-.btnclear {
-  border: none;
-  background-color: var(--color-form);
-  border-radius: .45rem;
-}
-
 input,
 select,
 textarea {
   padding: 1rem;
   margin-bottom: 1rem;
+  border: none;
+  background-color: var(--color-form);
+  border-radius: .45rem;
 }
 
 input:focus,
@@ -233,20 +227,23 @@ textarea:focus {
 }
 
 .btn {
-  border: 1px solid black;
-  padding: .55em 0;
   cursor: pointer;
   color: inherit;
   border-radius: .45rem;
+  background-color: var(--default-color-menu);
   transition: background-color .2s ease-in;
 }
 
-.btncontato {
-  background-color: var(--default-color-menu);
+.btncontato,
+.btnclear,
+.btnsub {
+  padding: var(--padding-btn);
+  border: 1px solid black;
 }
 
 .btnclear {
   color: black;
+  background-color: var(--color-form);
 }
 
 .btnsub {
@@ -256,10 +253,48 @@ textarea:focus {
 .btncontato:hover,
 .btncontato:focus,
 .btnsub:hover,
-.btnsub:focus {
+.btnsub:focus,
+.btnormal:hover,
+.btnormal:focus,
+.btoutline:hover,
+.btoutline:focus {
   background-color: rgb(41, 42, 48);
 }
 
 .form-quiz {
   width: calc(50% - var(--default-gap) / 2);
+}
+
+.btnormal,
+.btoutline {
+  padding: 1em 2em;
+}
+
+.btnsmall button+button {
+  margin-left: 3rem;
+}
+
+.btnsmall {
+  margin-bottom: 3rem;
+}
+
+.btnormal {
+  border: 1px solid black;
+}
+
+.btoutline {
+  background-color: var(--default-color);
+  border: none;
+  outline: 1px solid black;
+}
+
+.btsizebig {
+  font-size: 2rem;
+}
+
+.btnfull {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 3rem;
 }
