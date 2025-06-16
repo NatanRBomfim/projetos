@@ -58,34 +58,27 @@
             <h3>Quiz</h3>
             <form action="" class="form-quiz">
                 <label for="select">Qual é sua linguagem preferida?</label>
-                <Select name="selector">
-                    <option value="">Selecione</option>
+                <Select name="selector-tec" id="selector-tec">
+                    <option value="null">Selecione</option>
                     <optgroup label="Front-end">
-                        <option value="html">Html</option>
-                        <option value="css">Css</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
                         <option value="js">Java Script</option>
                     </optgroup>
                 </Select>
-                <div>
-                    <label for="prioridade">Baixa prioridade</label>
-                    <label><input type="radio" name="prioridadenivel" id="prioridade"></label>
-                </div>
-                <div>
-                    <label for="prioridade">Media prioridade</label>
-                    <label><input type="radio" name="prioridadenivel" id="prioridade"></label>
-                </div>
-                <div>
-                    <label for="prioridade">Alta prioridade</label>
-                    <label><input type="radio" name="prioridadenivel" id="prioridade"></label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="boxenviar" id="boxenviar"></label>
-                    <label for="boxenviar">Envie-me uma cópia</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="boxbot" id="boxbot"></label>
-                    <label for="boxbot">Sou humano</label>
-                </div>
+                <label>Baixa prioridade
+                    <input type="radio" name="prioridade" value="baixa"></label>
+
+                <label>Media prioridade
+                    <input type="radio" name="prioridade" value="media"></label>
+
+                <label>Alta prioridade
+                    <input type="radio" name="prioridade" value="alta"></label>
+
+                <label><input type="checkbox" name="boxcopia" value="true"> Envie-me uma cópia</label>
+
+                <label><input type="checkbox" name="boxbot" value="true"> Sou um humano</label>
+
                 <div class="row">
                     <button type="reset" class="btn btnclear">Limpar</button>
                     <button type="submit" class="btn btnsub">Enviar</button>
