@@ -1,6 +1,6 @@
 :root {
-  --default-color-menu: rgba(49, 51, 59, 0.9);
-  --default-color: rgba(68, 72, 86, 0.6);
+  --default-color-menu: rgba(49, 51, 59, 0.937);
+  --default-color: rgba(68, 72, 86, 0.777);
   --default-color-prs: #ff703c;
   --color-form: #ccc;
 
@@ -297,4 +297,45 @@ textarea:focus {
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 3rem;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5rem;
+  border-collapse: collapse;
+}
+
+td:last-child,
+th:last-child {
+  text-align: right;
+}
+
+th {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+td,
+th {
+  padding: 1rem 1.5rem;
+}
+
+.tbpadrao tr:not(:last-child),
+.tbpadrao th {
+  border-bottom: 3px solid var(--default-color-menu);
+}
+
+.tbzebrada tbody tr:nth-child(odd) {
+  background-color: var(--default-color-menu);
+}
+
+.tbzebradavertical tbody tr:nth-child(odd) {
+  background-color: var(--default-color-menu);
+}
+
+.tbzebradavertical td:not(:first-child),
+.tbzebradavertical th:not(:first-child) {
+  border-left: 2px solid rgb(41, 43, 50);
+
 }
