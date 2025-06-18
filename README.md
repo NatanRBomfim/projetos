@@ -1,2 +1,2 @@
 # projetos 🚀
-Projetos desenvolvidos com base nos aprendizados vistos em aulas e cursos.
+Projetos desenvolvidos com base em aprendizados vistos em aulas e cursos.
