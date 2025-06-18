@@ -299,7 +299,7 @@ textarea:focus {
   margin-bottom: 3rem;
 }
 
-table {
+.table {
   width: 100%;
   text-align: left;
   margin-bottom: 5rem;
@@ -330,12 +330,8 @@ th {
   background-color: var(--default-color-menu);
 }
 
-.tbzebradavertical tbody tr:nth-child(odd) {
-  background-color: var(--default-color-menu);
-}
-
 .tbzebradavertical td:not(:first-child),
 .tbzebradavertical th:not(:first-child) {
-  border-left: 2px solid rgb(41, 43, 50);
+  border-left: 1px solid rgb(41, 43, 50);
 
 }
