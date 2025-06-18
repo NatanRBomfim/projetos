@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>MyComponents</title>
+    <title>Projeto MyComponents</title>
+
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/brands.css">
+
+    <link rel="stylesheet" href="assets/icomoon/style.css">
 
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="normalize.css">
@@ -12,14 +17,16 @@
 
 <body>
     <header class="header-left">
-
         <nav class="list">
             <a href="#">
                 <img src="imagens/perfil.png" alt="rapaz sorridente" class="profile">
             </a>
 
             <ul>
-                <li><a href="index.html" class="link-list">Home</a></li>
+                <!--Utilizado o icomoon para implementar imagem no menu-->
+                <li><a href="index.html" class="link-list"><svg class="iconehome">
+                            <use xlink:href="assets/icomoon/symbol-defs.svg#icon-home"></use>
+                        </svg>Home</a></li>
                 <li><a href="tipografia.html" class="link-list">Tipografia</a></li>
                 <li><a href="cards.html" class="link-list">Cards</a></li>
                 <li><a href="listas.html" class="link-list">Listas</a></li>
@@ -40,14 +47,18 @@
             <p>Desenvolvedor front-end. Apaixonado por programação visual e por desafios novos.</p>
         </article>
         <h3>Minhas redes sociais</h3>
-        <address>
-            <p>
-                <a href="#" class="link">
+        <address class="address">
+            <p> <!-- icones utilizados com font-awesome -->
+                <a href="#" target="_blank" class="link">
+                    <i class="fa-brands fa-instagram"></i>
                     Instagram</a>
-                <a href="#" class="link">
+                <a href="https://www.linkedin.com/in/natan-bomfim-105954198/" target="_blank" class="link">
+                    <i class="fa-brands fa-linkedin"></i>
                     Linkedin</a>
+                <a href="https://github.com/NatanRBomfim" target="_blank" class="link">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub</a>
             </p>
-
         </address>
     </main>
 </body>

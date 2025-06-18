@@ -3,7 +3,6 @@
   --default-color: rgba(68, 72, 86, 0.777);
   --default-color-prs: #ff703c;
   --color-form: #ccc;
-
   --default-gap: 3rem;
   --padding-btn: .55em 0;
 }
@@ -64,9 +63,42 @@ section {
   border-bottom: 2px solid var(--default-color)
 }
 
+.link {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+  transition: all .3s;
+}
+
+.link:hover {
+  color: #ff703c;
+}
+
+.address p {
+  display: flex;
+  justify-content: space-between;
+  width: 35rem;
+}
+
+.fa-brands {
+  font-size: 3rem;
+}
+
+.iconehome {
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+  padding-right: 1rem;
+}
+
 .link-list {
   color: #e7e7e7;
-  display: block;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   text-decoration: none;
   padding: 1rem 0;
   margin: .5rem 0;
@@ -109,11 +141,6 @@ h2 {
 
 h3 {
   font-size: 2rem;
-}
-
-.link {
-  text-decoration: none;
-  color: inherit;
 }
 
 .main-content {
@@ -169,14 +196,6 @@ h3 {
 
 .card img {
   max-width: 100%;
-}
-
-.cube-marked {
-  list-style-type: square;
-}
-
-.cube-marked ul {
-  list-style-type: circle;
 }
 
 .alternate {
