@@ -15,4 +15,6 @@ Projeto moda-ora- Projeto desenvolvido para a criação de site sobre moda, util
 
 Projeto mycomponents- Projeto desenvolvido para a criação de site mais completa sobre informaçoes de desenvolvimento, utilizando transition, flexbox, acessibilidade com HTML e CSS.
 
+Projeto Angels-Hostel - Projeto desenvolvido para a criação de um site de hospedagem, utilizando responsividade e grid.
+
 
