@@ -17,4 +17,6 @@ Projeto mycomponents - Projeto desenvolvido para a criação de site mais comple
 
 Projeto Angels-Hostel - Projeto desenvolvido para a criação de um site de hospedagem, utilizando responsividade e grid.
 
+Projeto Ser-Digital - Projeto desenvolvido utilizando grid, flexbox, responsividade e implementação de menu hambuguer pela primeira vez.
+
 
