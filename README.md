@@ -19,4 +19,6 @@ Projeto Angels-Hostel - Projeto desenvolvido para a criação de um site de hosp
 
 Projeto Ser-Digital - Projeto desenvolvido utilizando grid, flexbox, responsividade e implementação de menu hambuguer pela primeira vez.
 
+Projeto Kenoji - Projeto desenvolvido utilizando flexbox e animation com emojis flutuantes.
+
 

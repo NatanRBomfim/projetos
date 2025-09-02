@@ -1,0 +1,144 @@
+:root {}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    background-image: linear-gradient(to left top, rgb(255, 191, 0), white);
+}
+
+#wrapper {
+    width: 90%;
+    max-width: 85em;
+    margin: auto;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+input[type="text"] {
+    border: 1px solid gray;
+    padding: .8em;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+input[type="text"]::placeholder {
+    color: gray;
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    padding: .8em;
+    border-radius: 5px;
+    background-color: rgb(1, 1, 67);
+    color: white;
+    transition: all .3s linear;
+}
+
+input[type="submit"]:hover {
+    background-color: color-mix(in srgb, rgb(1, 1, 67) 70%, transparent);
+}
+
+form {
+    display: flex;
+    gap: 1em;
+}
+
+p,
+input[type="text"] {
+    color: gray;
+}
+
+h1 {
+    font-size: 4.1875em;
+}
+
+header {
+    padding-top: 3em;
+}
+
+section {
+    margin-top: 2em;
+}
+
+strong {
+    text-transform: uppercase;
+    color: rgb(171, 15, 15);
+}
+
+main {
+    display: flex;
+    gap: 2rem;
+}
+
+main>* {
+    flex: 1 0 0;
+}
+
+.animation {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+@keyframes movement {
+    0% {
+        transform: translate(0, 0);
+
+    }
+
+    100% {
+        transform: translate(-10px, -30px);
+
+    }
+}
+
+.animation img {
+    position: absolute;
+    animation: movement 3s ease-in-out infinite alternate;
+}
+
+.animation img:nth-child(1) {
+    animation-delay: 1s;
+    bottom: 30px;
+    left: -50px;
+    z-index: 0;
+}
+
+.animation img:nth-child(2) {
+    animation-delay: 2s;
+    left: 350px;
+    z-index: 0;
+}
+
+
+.animation img:nth-child(3) {
+    animation-delay: 3s;
+
+    z-index: 1;
+}
+
+.animation img:nth-child(4) {
+    left: 30px;
+    bottom: -150px;
+    z-index: 2;
+    animation-delay: 1.5s;
+}
+
+
+.animation img:nth-child(5) {
+    left: 70px;
+    top: -70px;
+    z-index: 2;
+    animation-delay: 1.3s;
+}
+
+.animation img:nth-child(6) {
+    right: 40px;
+    bottom: -50px;
+    z-index: 2;
+    animation-delay: 2s;
+}
