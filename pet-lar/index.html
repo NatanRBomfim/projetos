@@ -9,6 +9,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
 
@@ -16,23 +19,25 @@
 </head>
 
 <body>
-    <div id="wrapperContent">
+    <div class="wrappercontentHeader wrapperContent fixed">
         <header class="header">
             <div class="logo">
-                <img src="imagens/petlar-logo.jpg" alt="logo">
+                <img src="imagens/petlogo.png" alt="logo">
                 <h1>PetLar</h1>
             </div>
             <nav class="menu">
                 <input type="checkbox" class="menu-btn hide" id="menu-btn">
                 <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
                 <ul class="header-menu">
-                    <li><a href="#">Adoção</a></li>
-                    <li><a href="#">Ajude</a></li>
+                    <li><a href="#adocao">Adoção</a></li>
+                    <li><a href="#"><i class="fa-solid fa-hand-holding-dollar"></i>Ajude</a></li>
                     <li><a href="#">Anunciar</a></li>
-                    <li><a href="#">Entrar</a></li>
+                    <li><a href="login.html">Entrar</a></li>
                 </ul>
             </nav>
         </header>
+    </div>
+    <div class="wrapperContent">
         <main>
             <section class="about">
                 <h1>Quem somos</h1>
@@ -52,110 +57,166 @@
                     </a>
                 </article>
             </section>
-            <section class="history">
+            <section>
                 <h2>Historias</h2>
-                <article class="cardHistory">
-                    <div class="headerHistory"><img src="imagens/dog1.jpg" alt="">
-                        <h3>Adoção</h3>
-                    </div>
-                    <div class="historyContent">
-                        <h3>rodrigo</h3>
-                        <h5>indaiatuba - SP</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptas accusamus excepturi
-                            nulla nesciunt unde similique impedit reiciendis incidunt autem labore, deleniti nam nobis
-                            ignissimos praesentium aspernatur veniam odio est
-                            aut, nostrum consequatur provident explicabo quod.</p>
-                    </div>
-                </article>
-                <article class="cardHistory">
-                    <div class="headerHistory"><img src="imagens/dog1.jpg" alt="">
-                        <h3>Adoção</h3>
-                    </div>
-                    <div class="historyContent">
-                        <h3>rodrigo</h3>
-                        <h5>indaiatuba - SP</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptas accusamus excepturi
-                            nulla nesciunt unde similique impedit reiciendis incidunt autem labore, deleniti nam nobis
-                            ignissimos praesentium aspernatur veniam odio est
-                            aut, nostrum consequatur provident explicabo quod.</p>
-                    </div>
-                </article>
-                <article class="cardHistory">
-                    <div class="headerHistory"><img src="imagens/dog1.jpg" alt="">
-                        <h3>Adoção</h3>
-                    </div>
-                    <div class="historyContent">
-                        <h3>rodrigo</h3>
-                        <h5>indaiatuba - SP</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptas accusamus excepturi
-                            nulla nesciunt unde similique impedit reiciendis incidunt autem labore, deleniti nam nobis
-                            ignissimos praesentium aspernatur veniam odio est
-                            aut, nostrum consequatur provident explicabo quod.</p>
-                    </div>
-                </article>
+                <div class="history">
+                    <article class="cardHistory">
+                        <div class="headerHistory"><img src="imagens/dog1.jpg" alt="">
+                            <h3>Adoção - Ricky</h3>
+                        </div>
+                        <div class="historyContent">
+                            <h4>Rodrigo ⭐⭐⭐⭐⭐</h4>
+                            <h5>indaiatuba - SP</h5>
+                            <blockquote>
+                                <p class="coment">"Gabrielle e suas duas filhinhas escolheram o Ricky para ser o seu
+                                    novo
+                                    amigo e
+                                    companheiro. Nós agradecemos muito e ficamos muito contente por saber que agora eles
+                                    estão juntos!"</p>
+                            </blockquote>
+                        </div>
+                    </article>
+                    
+                    <article class="cardHistory">
+                        <div class="headerHistory"><img src="imagens/dog3.jpg" alt="">
+                            <h3>Adoção - Charles</h3>
+                        </div>
+                        <div class="historyContent">
+                            <h4>Guilherme ⭐⭐⭐⭐⭐</h4>
+                            <h5>Indaiatuba - SP</h5>
+                            <blockquote>
+                                <p class="coment">"Através da plataforma encontrei um tutor responsável que me passou
+                                    muita
+                                    confiança."</p>
+                            </blockquote>
+
+                        </div>
+                    </article>
+                    <article class="cardHistory">
+                        <div class="headerHistory"><img src="imagens/dog2.jpg" alt="">
+                            <h3>Adoção - Thor</h3>
+                        </div>
+                        <div class="historyContent">
+                            <h4>Maria ⭐⭐⭐⭐⭐</h4>
+                            <h5>indaiatuba - SP</h5>
+                            <blockquote>
+                                <p class="coment">"No dia seguinte à publicação do post, a Roberta viu minha mensagem e
+                                    começamos a
+                                    conversar sobre o Thor. Desde o primeiro contato, ela já se apaixonou por ele. E
+                                    hoje,
+                                    fiz a entrega da nosso querido Thor para sua nova família"</p>
+                            </blockquote>
+                        </div>
+                    </article>
+                </div>
             </section>
-            <section class="adocao">
+            <section class="adocao" id="adocao">
                 <h2>Adote já</h2>
-                <article class="pets">
-                    <h3>Para adoção</h3>
-                    <img src="" alt="">
-                    <h3>Aquiles</h3>
-                    <p>Localização: Jd Do..</p>
-                    <p> 7 Dias atrás</p>
-                </article>
-                <article class="pets">
-                    <h3>Para adoção</h3>
-                    <img src="" alt="">
-                    <h3>Aquiles</h3>
-                    <p>Localização: Jd Do..</p>
-                    <p> 7 Dias atrás</p>
-                </article>
-                <article class="pets">
-                    <h3>Para adoção</h3>
-                    <img src="" alt="">
-                    <h3>Aquiles</h3>
-                    <p>Localização: Jd Do..</p>
-                    <p> 7 Dias atrás</p>
-                </article>
-                <article class="pets">
-                    <h3>Para adoção</h3>
-                    <img src="" alt="">
-                    <h3>Aquiles</h3>
-                    <p>Localização: Jd Do..</p>
-                    <p> 7 Dias atrás</p>
-                </article>
-                <a href="#">Ver pets para adoção</a>
+                <div class="wrapperCards">
+                    <article class="pets sm-12 md-1-5 lg-3">
+                        <h3>Para adoção</h3>
+                        <div class="imagen">
+                            <img src="imagens/cat2.webp" alt="">
+                        </div>
+                        <div class="contentPets">
+                            <h4>Aquiles</h4>
+                            <div class="info">
+                                <p>Localização: Jd Do...</p>
+                                <p> 7 Dias atrás</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="pets sm-12 md-1-5 lg-3">
+                        <h3>Para adoção</h3>
+                        <div class="imagen">
+                            <img src="imagens/cat3.jpg" alt="">
+                        </div>
+                        <div class="contentPets">
+                            <h4>Frajola</h4>
+                            <div class="info">
+                                <p>Localização: Jd Do...</p>
+                                <p> 2 semanas atras</p>
+                            </div>
+                        </div>
+
+                    </article>
+                    <article class="pets sm-12 md-1-5 lg-3">
+                        <h3>Para adoção</h3>
+                        <div class="imagen">
+                            <img src="imagens/dog4.jpg" alt="">
+                        </div>
+                        <div class="contentPets">
+                            <h4>Bilu</h4>
+                            <div class="info">
+                                <p>Localização: Jd Do...</p>
+                                <p> 7 Dias atrás</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="pets sm-12 md-1-5 lg-3">
+                        <h3>Para adoção</h3>
+                        <div class="imagen">
+                            <img src="imagens/cat.jpg" alt="">
+                        </div>
+                        <div class="contentPets">
+                            <h4>Zeus</h4>
+                            <div class="info">
+                                <p>Localização: Jd Do...</p>
+                                <p> 5min atrás</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="centralizeBtn">
+                    <a href="#" class="btn btnDivul btnverMais">Ver pets para adoção</a>
+                </div>
+
             </section>
         </main>
         <section class="cardsTips">
-            <article>
+            <article class="tips sm-12 lg-4">
                 <h3>Divulgue seu pet para adoção</h3>
-                <img src="" alt="">
+                <div class="flex">
+                    <div class="square">
+                        <i class="icons fa-solid fa-bullhorn"></i>
+                    </div>
+                </div>
                 <p>Divulgue para milhares de pessoas na sua região.</p>
             </article>
-            <article>
+            <article class="tips sm-12 lg-4">
                 <h3>Encontre um lar para um pet</h3>
-                <img src="" alt="">
+                <div class="flex">
+                    <div class="square">
+                        <i class="icons fa-solid fa-house"></i>
+                    </div>
+                </div>
                 <p>Utilize ferramentas para que o pet ganhe um lar cheio de amor.</p>
             </article>
-            <article>
+            <article class="tips sm-12 lg-4">
                 <h3>Segurança e privacidade</h3>
-                <img src="" alt="">
+                <div class="flex">
+                    <div class="square">
+                        <i class="icons fa-solid fa-globe"></i>
+                    </div>
+                </div>
                 <p>Suas informações estão seguras conosco.</p>
             </article>
         </section>
 
-        <section class="faq">
-            <article>
+        <section class="faqsection">
+            <article class="house">
+                <img src="imagens/doghouse.png" alt="">
+            </article>
+            <article class="faq">
                 <h2>Faq</h2>
                 <details>
-                    <summary>Como faço para divulgar um pet para adoção</summary>
+                    <summary class="summary">Como faço para divulgar um pet para adoção?</summary>
                     <p>Basta acessar a Página de Criação do Anúncio, preencher com os dados do seu pet e clicar em Criar
                         Anúncio. É necessário ao menos adicionar a foto do pet, informações de contato e endereço para
                         que o anúncio seja criado com sucesso!</p>
                 </details>
                 <details>
-                    <summary>O que é uma campanha e divulgação</summary>
+                    <summary class="summary">O que é uma campanha e divulgação?</summary>
                     <p>A campanha é uma forma de divulgar o seu anúncio para mais pessoas, aumentando as chances de
                         encontrar um lar para o seu pet.</p>
                 </details>
@@ -163,18 +224,21 @@
         </section>
 
         <div class="alert">
+            <i class="fa-solid fa-store-slash"></i>
             <p>A PetLar <strong>não</strong> compactua com comercialização de animais de estimação. Não incentive esta
                 prática.</p>
         </div>
 
-        <footer>
-            <div>
-                <img src="imagens/petlar-logo.jpg" alt="">
-                <h1>PetLar</h1>
+    </div>
+    <footer>
+        <div class="wrapperContent">
+            <div class="logo-footer">
+                <img src="imagens/petlogo.png" alt="">
+                <h2>PetLar</h2>
             </div>
             <div>
                 <nav>
-                    <ul>
+                    <ul class="nav-footer">
                         <li><a href="#">Contato</a></li>
                         <li><a href="#">Parcerias</a></li>
                         <li><a href="#">Quem Somos</a></li>
@@ -183,12 +247,16 @@
                     </ul>
                 </nav>
             </div>
-            <div>
-                <p>2025 PetLar</p>
+        </div>
+        <div class="copy">
+            <div class="wrapperContent">
+                <p>© 2025 PetLar</p>
                 <p>Desenvolvido por Natan Bomfim</p>
             </div>
-        </footer>
-    </div>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>
